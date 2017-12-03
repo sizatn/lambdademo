@@ -3,6 +3,8 @@ package com.sizatn.lambda.sort;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sizatn.lambda.entity.Menu;
+
 public class CollectionsSort {
 	
 	public static void main(String[] args) {

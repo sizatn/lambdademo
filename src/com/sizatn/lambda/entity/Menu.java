@@ -1,4 +1,4 @@
-package com.sizatn.lambda.sort;
+package com.sizatn.lambda.entity;
 
 public class Menu {
 
@@ -7,6 +7,11 @@ public class Menu {
 
 	public Menu() {
 		super();
+	}
+
+	public Menu(String menuName) {
+		super();
+		this.menuName = menuName;
 	}
 
 	public Menu(String menuName, String menuSort) {
