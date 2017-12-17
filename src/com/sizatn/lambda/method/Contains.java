@@ -4,6 +4,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiPredicate;
 
+/**
+ * 
+ * @desc 
+ * @author sizatn
+ * @date Dec 17, 2017
+ */
 public class Contains {
 
 	public static void main(String[] args) {
@@ -12,7 +18,7 @@ public class Contains {
 
 		BiPredicate<List<String>, String> contains = List::contains;
 		
-		System.out.println(contains);
+		System.out.println(contains.toString());
 	}
 
 }

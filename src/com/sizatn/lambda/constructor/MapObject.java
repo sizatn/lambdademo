@@ -6,6 +6,12 @@ import java.util.function.Function;
 
 import com.sizatn.lambda.entity.Menu;
 
+/**
+ * 
+ * @desc 
+ * @author sizatn
+ * @date Dec 17, 2017
+ */
 public class MapObject {
 	
 	static Map<String, Function<String, Menu>> map = new HashMap<String, Function<String, Menu>>();

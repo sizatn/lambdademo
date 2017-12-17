@@ -9,6 +9,12 @@ import java.util.function.Supplier;
 
 import com.sizatn.lambda.entity.Menu;
 
+/**
+ * 
+ * @desc 
+ * @author sizatn
+ * @date Dec 17, 2017
+ */
 public class NewObject {
 	
 	public static void main(String[] args) {

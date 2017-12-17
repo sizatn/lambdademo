@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
  * @author sizatn
  * @date Dec 19, 2016
  */
-public class filterString {
+public class FilterString {
 
 	public static void main(String[] args) {
 

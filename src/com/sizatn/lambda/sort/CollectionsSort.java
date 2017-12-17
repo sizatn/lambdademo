@@ -5,6 +5,12 @@ import java.util.List;
 
 import com.sizatn.lambda.entity.Menu;
 
+/**
+ * 
+ * @desc 
+ * @author sizatn
+ * @date Dec 17, 2017
+ */
 public class CollectionsSort {
 	
 	public static void main(String[] args) {

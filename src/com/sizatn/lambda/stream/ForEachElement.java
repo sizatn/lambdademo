@@ -15,14 +15,14 @@ public class ForEachElement {
 	public static void main(String[] args) {
 
 		// Convert String to Uppercase and join them using coma
-		List<String> G7 = Arrays.asList("USA", "Japan", "France", "Germany", "Italy", "U.K.", "Canada");
+		List<String> g7 = Arrays.asList("USA", "Japan", "France", "Germany", "Italy", "U.K.", "Canada");
 		
-		String G7Countries = G7.stream().map(x -> x.toUpperCase()).collect(Collectors.joining(", "));
-		System.out.println(G7Countries);
+		String g7Countries = g7.stream().map(x -> x.toUpperCase()).collect(Collectors.joining(", "));
+		System.out.println(g7Countries);
 
 		// new way
-		String G7Countrie = G7.stream().map(String::toUpperCase).collect(Collectors.joining(", "));
-		System.out.println(G7Countrie);
+		String g7Countrie = g7.stream().map(String::toUpperCase).collect(Collectors.joining(", "));
+		System.out.println(g7Countrie);
 	}
 
 }

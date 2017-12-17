@@ -29,7 +29,6 @@ public class MapAndReduce {
 		for (Integer cost : costBeforeTax) {
 			double price = cost + .12 * cost;
 			total = total + price;
-
 		}
 		System.out.println("Total : " + total);
 

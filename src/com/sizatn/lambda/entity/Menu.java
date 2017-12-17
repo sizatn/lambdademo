@@ -1,5 +1,11 @@
 package com.sizatn.lambda.entity;
 
+/**
+ * 
+ * @desc 菜单对象
+ * @author sizatn
+ * @date Dec 17, 2017
+ */
 public class Menu {
 
 	private String menuName;

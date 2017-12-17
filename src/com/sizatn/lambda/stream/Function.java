@@ -41,7 +41,13 @@ public class Function {
 //		}
 //	}
 	
-	// In Java 8
+	/**
+	 * @param names
+	 * @param condition
+	 * @desc In Java 8
+	 * @author sizatn
+	 * @date Dec 17, 2017
+	 */
 	public static void filter(List<String> names, Predicate<String> condition) {
 		names.stream().filter((name) -> (condition.test(name))).forEach((name) -> {
 			System.out.println(name + " ");
