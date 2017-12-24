@@ -48,7 +48,7 @@ public class GroupingByCollector {
 						return Dish.CaloriesLevel.FAT;
 					}
 				})));
-		dishesByTypeCaloriesLevel.forEach((key, value) ->{
+		dishesByTypeCaloriesLevel.forEach((key, value) -> {
 			System.out.println(key.toString() + " = " + value.toString());
 		});
 	}
