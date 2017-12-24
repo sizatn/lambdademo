@@ -25,6 +25,10 @@ public class Dish {
 	public enum Type {
 		MEAT, FISH, OTHER
 	}
+	
+	public enum CaloriesLevel {
+		DIET, NORMAL, FAT
+	}
 
 	public Dish() {
 		super();

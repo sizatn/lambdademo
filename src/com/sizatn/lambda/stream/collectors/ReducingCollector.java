@@ -34,6 +34,18 @@ public class ReducingCollector {
 		// 热量最高的菜
 		Optional<Dish> mostCalories = menu.stream().collect(Collectors.reducing((d1, d2) -> d1.getCalories() > d2.getCalories() ? d1 : d2));
 		System.out.println(mostCalories.get());
+		
+		System.out.println("");
+		
+		// 连接字符串
+		String shortName = menu.stream().map(Dish::getName).collect(Collectors.reducing((d1, d2) -> d1 + d2)).get();
+		System.out.println(shortName);
+		
+		System.out.println("");
+		
+		String shortName1 = menu.stream().collect(Collectors.reducing("", Dish::getName, (d1, d2) -> d1 + d2)); 
+		System.out.println(shortName1);
+		
 	}
 
 }
