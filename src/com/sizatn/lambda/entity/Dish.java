@@ -26,7 +26,7 @@ public class Dish {
 		MEAT, FISH, OTHER
 	}
 	
-	public enum CaloriesLevel {
+	public enum CaloricLevel {
 		DIET, NORMAL, FAT
 	}
 
