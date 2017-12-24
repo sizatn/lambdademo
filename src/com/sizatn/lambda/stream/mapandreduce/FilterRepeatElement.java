@@ -1,4 +1,4 @@
-package com.sizatn.lambda.stream;
+package com.sizatn.lambda.stream.mapandreduce;
 
 import java.util.Arrays;
 import java.util.List;

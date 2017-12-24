@@ -1,4 +1,4 @@
-package com.sizatn.lambda.stream;
+package com.sizatn.lambda.stream.mapandreduce;
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
@@ -21,7 +21,6 @@ public class CountNumber {
 		System.out.println("Lowest prime number in List : " + stats.getMin());
 		System.out.println("Sum of all prime numbers : " + stats.getSum());
 		System.out.println("Average of all prime numbers : " + stats.getAverage());
-
 	}
 
 }

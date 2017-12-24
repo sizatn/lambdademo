@@ -1,5 +1,8 @@
 package com.sizatn.lambda.entity;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * 
  * @desc 交易
@@ -22,6 +25,14 @@ public class Transaction {
 		this.year = year;
 		this.value = value;
 	}
+
+	public static List<Transaction> transactions = Arrays.asList(
+			new Transaction(new Trader("Brian", "Cambridge"), 2011, 300),
+			new Transaction(new Trader("Raoul", "Cambridge"), 2012, 1000),
+			new Transaction(new Trader("Raoul", "Cambridge"), 2011, 400),
+			new Transaction(new Trader("Mario", "Milan"), 2012, 710),
+			new Transaction(new Trader("Mario", "Milan"), 2012, 700),
+			new Transaction(new Trader("Alan", "Cambridge"), 2012, 950));
 
 	public Trader getTrader() {
 		return trader;
