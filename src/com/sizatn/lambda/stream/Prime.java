@@ -1,4 +1,4 @@
-package com.sizatn.lambda.stream.collectors;
+package com.sizatn.lambda.stream;
 
 import java.util.List;
 import java.util.Map;
