@@ -66,7 +66,7 @@ public class Prime {
 	/**
 	 * @param n
 	 * @return
-	 * @desc 自定义收集器实现质数（匿名内部类）
+	 * @desc 自定义收集器实现质数（匿名内部类），可读性和可复用性较差
 	 * @author sizatn
 	 * @date Dec 31, 2017
 	 */
