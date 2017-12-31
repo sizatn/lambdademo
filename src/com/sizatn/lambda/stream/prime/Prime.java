@@ -30,6 +30,10 @@ public class Prime {
 
 		System.out.println("");
 
+		Map<Boolean, List<Integer>> primesList3 = partitionPrimesWithCustomCollector1(20);
+		primesList3.forEach((key, value) -> {
+			System.out.println(key.toString() + " = " + value.toString());
+		});
 	}
 
 	/**
@@ -59,6 +63,13 @@ public class Prime {
 		return IntStream.rangeClosed(2, n).boxed().collect(new PrimeNumbersCollector());
 	}
 
+	/**
+	 * @param n
+	 * @return
+	 * @desc 自定义收集器实现质数（匿名内部类）
+	 * @author sizatn
+	 * @date Dec 31, 2017
+	 */
 	@SuppressWarnings("serial")
 	private static Map<Boolean, List<Integer>> partitionPrimesWithCustomCollector1(int n) {
 		return IntStream.rangeClosed(2, n).boxed().collect(() -> new HashMap<Boolean, List<Integer>>() {
