@@ -1,4 +1,4 @@
-package com.sizatn.lambda.parallelstream;
+package com.sizatn.lambda.parallel;
 
 import java.util.stream.Stream;
 
