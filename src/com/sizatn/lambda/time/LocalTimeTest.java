@@ -11,6 +11,10 @@ import java.time.LocalTime;
 public class LocalTimeTest {
 
 	public static void main(String[] args) {
+		
+		// 创建一个当前的LocalTime
+		LocalTime lt = LocalTime.now();
+		System.out.println(lt);
 
 		// 解析字符串成LocalTime
 		LocalTime time = LocalTime.parse("13:45:20");

@@ -15,6 +15,10 @@ public class LocalDateTimeTest {
 
 	public static void main(String[] args) {
 		
+		// 创建一个当前的LocalDateTime
+		LocalDateTime ldt = LocalDateTime.now();
+		System.out.println(ldt);
+		
 		// 创建一个LocalDateTime实例
 		LocalDateTime dt1 = LocalDateTime.of(2018, Month.JANUARY, 7, 13, 48, 20);
 		System.out.println(dt1);
