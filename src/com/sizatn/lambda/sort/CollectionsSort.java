@@ -1,7 +1,9 @@
 package com.sizatn.lambda.sort;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.sizatn.lambda.entity.Menu;
 
@@ -47,6 +49,25 @@ public class CollectionsSort {
 		// desc(降序)
 		list.sort((Menu o1, Menu o2) -> o2.getMenuSort().compareTo(o1.getMenuSort()));
 		list.forEach(System.out::println);
+		
+		System.out.println("=========================");
+		
+		List<Map<String, Object>> mapList = new ArrayList<Map<String, Object>>();
+		
+		Map<String, Object> map1 = new HashMap<String, Object>();
+		map1.put("count", 2);
+		
+		Map<String, Object> map2 = new HashMap<String, Object>();
+		map2.put("count", 4);
+		
+		mapList.add(map1);
+		mapList.add(map2);
+		
+		mapList.sort((Map<String, Object> o1, Map<String, Object> o2) -> Integer
+				.valueOf(o1.get("count").toString()) > Integer.valueOf(o2.get("count").toString()) ? -1 : 1);
+		mapList.forEach((Map<String, Object> o) -> System.out.println(o.toString()));
+
+		System.out.println("=========================");
 		
 //		Collections.sort(list, new Comparator<Menu>() {
 //			@Override
